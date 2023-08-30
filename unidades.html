@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="br">
+
+<head>
+	<meta charset="UTF-8">
+	<!--Padrão de caracteres brasileiro-->
+	<link rel="stylesheet" href="estilo.CSS">
+	<!--CSS Externo-->
+	<script src="efeitos.js"></script>
+
+	<title>Nossas unidades!</title>
+	<!--Título da página-->
+	<link rel="icon" href="icones/icone_logo.png" />
+	<!--Ícone da página-->
+
+</head>
+
+<body>
+	<nav>
+		<div id="menu" class="escondida">
+			<ul>
+				<li><a href="index.html"><img class="logonav" src="icones/icone_logo_deitada.jpeg" /></a></li>
+				<li><a class="botão3" href="index.html">Página inicial</a></li>
+				<li><a class="botão2" href="unidades.html">Unidades</a></li>
+				<li><a class="botão2" href="aulas.html">Aulas</a></li>
+				<li><a class="botão2" href="aulas.html#perguntasfrequentes">Dúvidas</a></li>
+				<li><a class="botão2" href="login.html">Login</a></li>
+				<li><a class="botão1" href="matricula.html">Começar agora</a></li>
+			</ul>
+		</div>
+		<div id="menuHam" class="escondida" onmouseleave="transformarMenuHam()">
+			<ul>	
+				<li><a href="index.html"><img class="logonav" src="icones/icone_logo_deitada.jpeg" ></a></li>
+				<li><a class="botão3" href="index.html">Página inicial</a></li>
+				<li><a class="botão3" href="unidades.html">Unidades</a></li>
+				<li><a class="botão3" href="aulas.html">Aulas</a></li>
+				<li><a class="botão3" href="aulas.html#perguntasfrequentes">Dúvidas</a></li>
+				<li><a class="botão3" href="login.html">Login</a></li>
+				<li><a class="botão3" href="matricula.html">Cadastre-se</a></li>
+				<li><a class="botão3" href="franquia.html">Seja um franqueado</a></li>
+			</ul>
+		</div>
+		<img src="icones/hamb-removebg-preview.png" onclick="transformarMenuHam()"  class="escondida" id="botaoMenuHam">
+	</nav>
+		
+	<header id="home"></header>
+	<section id="home"></section>
+
+	<section class="colorido">
+
+	<h1 class="msg"><div class="azul"> Em qual templo deseja </div>&nbsptreinar ?</h1>
+
+	</section>
+	
+	<section class="unidades">
+		
+
+		<div class="item">
+			<img src="img/unidade1.jpeg" class="imagemItem" alt="img 1 - academia do Bairro da Leopoldina"/> <!-- alt="" é usado para dar acessibilidade qndo usuário ñ puder ver a imagem ou ñ carregar -->
+			<p class= "descricaoaulas">Guaipá</p>
+			<a onclick="exibeResposta('mapa1')"><p class="endereco">Rua Guaipá, 1399 - Vila Leopoldina, São Paulo - SP</p></a>
+			
+			<iframe id="mapa1" class="escondida" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.2700022998324!2d-46.73798582496856!3d-23.522789360175686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8c6fa891bd5%3A0x9c43958c1fd94a7d!2sR.%20Guaip%C3%A1%2C%201399%20-%20Vila%20Leopoldina%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005089-001!5e0!3m2!1spt-BR!2sbr!4v1687406459409!5m2!1spt-BR!2sbr"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+			<!-- TIPOS DE PLANOS -->
+			<p class=valores>Planos mensais:</p> <br> 
+		
+			<div class="planos">
+				<p> 
+					<span >ATLAS</span>    <br>
+					<span class="tachado">R$ 139,90</span>	<br>
+					R$ 22,90
+				</p>
+			
+				<p class="planoDois">
+					<span >TITÃ</span>    <br>
+					<span class="tachado">R$ 149,90</span> <br> 
+					R$22,90
+				</p>
+			</div>
+		
+			<!-- Botão para escolher a unidade -->
+			<a href="matricula.html" class="btn"> Quero esse templo</a>
+		</div>
+
+		<div class="item">
+			<img src="img/unidade2.jpeg" class="imagemItem" alt="img2 - academia do Bairro da">
+			<p class= "descricaoaulas">Freguesia do Ó</p>
+			<a onclick="exibeResposta('mapa2')"><p class="endereco">Av. Itaberaba, 2080 - Itaberaba, São Paulo - SP</p></a>
+
+			<iframe id="mapa2" class="escondida" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.3281422548694!2d-46.69372852497002!3d-23.48468735877925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef9b64993f345%3A0x360240ab76174583!2sAv.%20Itaberaba%2C%202080%20-%20Itaberaba%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2002739-000!5e0!3m2!1spt-BR!2sbr!4v1687408988691!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			<!-- TIPOS DE PLANOS -->
+			<p class=valores>Planos mensais:</p> <br> 
+			
+			<div class="planos">
+				<p>
+					<span >ATLAS</span> 	<br> 
+					<span class="tachado">R$ 139,90</span>	<br>
+					R$ 22,90
+				</p>
+				<p class="planoDois">
+					<span >TITÃ</span>     <br>
+					 <span class="tachado">R$ 149,90</span> <br> 
+					 R$22,90 
+				</p>
+			</div>
+		
+			<!-- Botão para escolher a unidade -->
+			<a href="matricula.html" class="btn"> Quero esse templo</a>
+		</div>
+
+		<div class="item">
+			<img src="img/unidade3.jpeg" class="imagemItem" alt="img 3 - academia do Bairro da" >
+			<p class= "descricaoaulas">Paulista</p>
+			<a onclick="exibeResposta('mapa3')"><p class="endereco">Av. Paulista, 664 - Bela Vista, São Paulo - SP</p></a>
+			<iframe id="mapa3" class="escondida" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.043844127323!2d-46.6518192249669!3d-23.56686876179396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59b8db8ef699%3A0x1c7694e9609dbc60!2sAv.%20Paulista%2C%20664%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-100!5e0!3m2!1spt-BR!2sbr!4v1687409204530!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+			<!-- TIPOS DE PLANOS -->
+			<p class=valores>Planos mensais:</p> <br> 
+		
+			<div class="planos">
+				<p>
+					<span>ATLAS</span>   <br> 
+					<span class="tachado">R$ 139,90</span> <br>
+					R$ 22,90
+				</p>
+				<p class="planoDois">
+					<span>TITÃ</span>     <br>
+					 <span class="tachado">R$ 149,90</span> <br> 
+					 R$22,90 
+				</p>
+			</div>
+		
+			<!-- Botão para escolher a unidade -->
+			<a href="matricula.html" class="btn"> Quero esse templo</a>
+		</div>
+		
+		<div class="item">
+			<img src="img/unidade4.jpeg" class="imagemItem"  alt="img 4 - academia do Bairro da">
+			<p class= "descricaoaulas">Água Branca</p>
+			<a onclick="exibeResposta('mapa4')"><p class="endereco">Av. Francisco Matarazzo, 2000 - Água Branca, São Paulo - SP</p></a>
+
+			<iframe id="mapa4" class="escondida" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.2014793418725!2d-46.68442902496859!3d-23.52525476026616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef9cafa407ffd%3A0x96bcad23a254c924!2sAv.%20Francisco%20Matarazzo%2C%202000%20-%20%C3%81gua%20Branca%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005001-200!5e0!3m2!1spt-BR!2sbr!4v1687409355728!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		
+			<!-- TIPOS DE PLANOS -->
+			<p class=valores>Planos mensais:</p> <br> 
+			<div class="planos">
+				<p>
+					<span>ATLAS</span>	<br>
+					<span class="tachado">R$ 139,90</span>	<br>
+					R$ 22,90
+				</p> 
+				<p class="planoDois">
+					<span>TITÃ</span>      <br> 
+					<span class="tachado">R$ 149,90</span>   <br> 
+					R$22,90 
+				</p>
+			</div>
+		
+			<!-- Botão para escolher a unidade -->
+			<a href="matricula.html" class="btn"> Quero esse templo</a>
+		</div>
+	</section>
+
+	<footer>
+		<p class="txtFooter">Siga-nos nas redes sociais </p>
+
+		<div class="redes">
+			<ul>
+				<li><a href="mailto:atlasacademy2023@gmail.com" target="_blank"><img src="icones/email.png"  /></a></li>
+				<li><a href="https://www.facebook.com/people/Atlas-Academy/100092415226796/?mibextid=ZbWKwL" target="_blank"><img src="icones/face.png"  /></a></li>
+				<li><a href="https://instagram.com/atlasacademia23?igshid=MzRlODBiNWFlZA==" target="_blank"><img src="icones/insta.png" /></a></li>
+				<li><a href="https://wa.me/5511988381595" target="_blank"><img src="icones/whats.png" /></a></li>
+			</ul>
+		</div>
+		<p><a href="franquia.html" class="txtFooter">CLIQUE E SEJA UM FRANQUEADO</a></p>
+		<p class="botaotopo"><a href="#home">Voltar ao topo</a></p>
+	</footer>
+</body>
+</html>

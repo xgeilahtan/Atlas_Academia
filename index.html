@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="br">
+
+<head>
+	<meta charset="UTF-8">
+	<!--Padrão de caracteres brasileiro-->
+	<link rel="stylesheet" href="estilo.CSS">
+	<!--CSS Externo-->
+	<script src="efeitos.js"></script>
+
+	<title>Atlas Academia</title>
+	<!--Título da página-->
+	<link rel="icon" href="icones/icone_logo.png" />
+	<!--Ícone da página-->
+
+</head>
+
+<body>
+	<nav>
+		<div id="menu" class="escondida">
+			<ul>
+				<li><a href="index.html"><img class="logonav" src="icones/icone_logo_deitada.jpeg" /></a></li>
+				<li><a class="botão3" href="index.html">Página inicial</a></li>
+				<li><a class="botão2" href="unidades.html">Unidades</a></li>
+				<li><a class="botão2" href="aulas.html">Aulas</a></li>
+				<li><a class="botão2" href="aulas.html#perguntasfrequentes">Dúvidas</a></li>
+				<li><a class="botão2" href="login.html">Login</a></li>
+				<li><a class="botão1" href="matricula.html">Começar agora</a></li>
+			</ul>
+		</div>
+		<div id="menuHam" class="escondida" onmouseleave="transformarMenuHam()">
+			<ul>	
+				<li><a href="index.html"><img class="logonav" src="icones/icone_logo_deitada.jpeg" ></a></li>
+				<li><a class="botão3" href="index.html">Página inicial</a></li>
+				<li><a class="botão3" href="unidades.html">Unidades</a></li>
+				<li><a class="botão3" href="aulas.html">Aulas</a></li>
+				<li><a class="botão3" href="aulas.html#perguntasfrequentes">Dúvidas</a></li>
+				<li><a class="botão3" href="login.html">Login</a></li>
+				<li><a class="botão3" href="matricula.html">Cadastre-se</a></li>
+				<li><a class="botão3" href="franquia.html">Seja um franqueado</a></li>
+			</ul>
+		</div>
+		<img src="icones/hamb-removebg-preview.png" onclick="transformarMenuHam()"  class="escondida" id="botaoMenuHam">
+	</nav>
+		
+	<header id="home"></header>
+
+	<section id="carrossel">
+		<img src="img/carrossel/AULAS.png" name="slide" id="slide" class="imagemCarrossel" />
+			<p class="ante" onClick="Anterior()"> <img style="width: 100%" src="img/seta_esquerda.png"/></p>
+			<p class="prox" onClick="Proximo()" > <img  style="width: 100%" src="img/seta_direita.png" /></p>
+	</section>
+
+	<span id="templo">
+		<h1 class="msg">Encontre o templo<span class="azul"> mais próximo!</span></h1>
+				<a href="unidades.html" class="btn1">ESCOLHER TEMPLO</a>
+		<img src="img/logo_deitada_espacada.png" id="templo">
+	</span>	
+
+		
+	<main>
+		<h1 class="msg">Invista no seu<span class="azul"> futuro</span></h1>
+
+		<section id="desafios">	
+
+			<div class="banner">
+				<a href="aulas.html" class="linkBanner">
+					<img src="img/fit dance.jpeg" class="imagemBanner"/>
+					<span class="tituloBanner">			
+						<h3>Fit Dance</h3>
+					</span>
+					<p class="txtBanner">
+						Pra você se sair bem em todas as festas e arrasar. As aulas são ministradas por professores licenciados.
+					</p>
+					<b class="txtBannerLink"> Saiba Mais</b>
+				</a>
+			</div>
+
+			<div class="banner"><!--KARATE-->
+				<a href="aulas.html" class="linkBanner"> 			
+					<img src="img/karate.jpeg" class="imagemBanner"/>
+					<span class="tituloBanner">			
+						<h3>Karatê</h3>
+					</span>
+					<p class="txtBanner">
+						Arte marcial japonesa com movimentos corporais eficientes para autodefesa. Estimula os reflexos.
+					</p>
+					<b class="txtBannerLink">Saiba Mais</b>
+				</a>
+			</div>
+	
+			<div class="banner">
+				<a href="aulas.html" class="linkBanner">
+					<img src="img/atlas cross.jpeg" class="imagemBanner">
+					<span class="tituloBanner">			
+						<h3>Atlas Cross</h3>
+					</span>
+					<p class="txtBanner">
+						Um circuito, dividido entre momentos de atividade e de repouso. São cinco exercícios diferentes.
+					</p>
+					<b class="txtBannerLink"> Saiba Mais</b>
+				</a>
+			</div>
+
+			<div class="banner">
+				<a href="aulas.html" class="linkBanner">
+					<img src="img/Yoga.jpg" class="imagemBanner">
+					<span class="tituloBanner">			
+						<h3>YOGA</h3>
+					</span>
+					<p class="txtBanner">
+						Yoga é uma prática incrível que combina movimentos suaves com respiração tranquila. 
+					</p>
+					<b class="txtBannerLink"> Saiba Mais</b>
+				</a>
+			</div>
+		</section>
+	</main>
+
+	<div id="hist">
+		<h1 class="msg">QUEM SOMOS  <span class="azul">NÓS?</span></h1>
+	
+		<section id="atlas">
+			<p>
+				<div class="txtSobreNos">
+			     A Atlas Academia é uma academia especializada em formar titãs. Na nossa academia, você vai se sentir como se estivesse viajando de volta no tempo, para a antiga Grécia, onde os deuses, heróis e atletas se uniam para alcançar o máximo potencial do corpo e da mente. Aqui, a temática grega torna o exercício uma aventura emocionante!
+				<b> Inaugurada em 2023</b> a Atlas conta com equipamentos inovadores. Imagine uma esteira que simula uma corrida épica pela cidade de Atenas, ou bicicletas que o levam por trilhas virtuais pelos picos nevados do Monte Olimpo. 
+				Com tecnologia moderna e um toque da história grega, cada treino se torna uma jornada mágica. 
+				<br>Ao entrar você será recebido por estátuas imponentes de deuses gregos como Apolo, o deus da força e da coragem, e Atena, a deusa da sabedoria e da estratégia. 
+				Nossos instrutores são verdadeiros heróis do fitness, prontos para guiá-lo em sua jornada de transformação. Seja em aulas de ioga inspiradas nas posturas graciosas das deusas gregas, treinos de força modelados pelos feitos de Hércules ou corridas empolgantes como as das Olimpíadas antigas, você encontrará variedade e diversão em cada sessão.
+				<br> Para celebrar suas conquistas, temos um Salão dos Campeões, onde você pode se sentir como um verdadeiro vencedor olímpico. Aqui, as paredes estão cheias de coroas de louros, troféus imaginários e medalhas brilhantes, para lembrá-lo de que cada esforço é uma vitória digna dos deuses!
+				<br> Na Atlas Academia, não só você fortalecerá seu corpo, mas também será inspirado pela força e pela mitologia grega. Prepare-se para mergulhar em uma experiência fitness única, onde os tempos antigos se encontram com a inovação moderna para criar um espaço mágico de saúde e bem-estar. Venha se juntar a nós nessa jornada emocionante rumo à grandeza!
+			</div>
+			</p>
+		</section>
+	</div>
+
+
+	<footer>
+		<p class="botaotopo"><a href="#home">Voltar ao topo</a></p>
+		
+		<p class="txtFooter">Siga-nos nas redes sociais</p>
+
+		<div class="redes">
+			<ul>
+				<li><a href="mailto:atlasacademy2023@gmail.com" target="_blank"><img src="icones/email.png"  /></a></li>
+				<li><a href="https://www.facebook.com/people/Atlas-Academy/100092415226796/?mibextid=ZbWKwL" target="_blank"><img src="icones/face.png"  /></a></li>
+				<li><a href="https://instagram.com/atlasacademia23?igshid=MzRlODBiNWFlZA==" target="_blank"><img src="icones/insta.png" /></a></li>
+				<li><a href="https://wa.me/5511988381595" target="_blank"><img src="icones/whats.png" /></a></li>
+			</ul>
+		</div>
+		<p><a href="franquia.html" class="txtFooter">CLIQUE E SEJA UM FRANQUEADO</a></p>
+		
+	</footer>
+</body>
+
+</html>

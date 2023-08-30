@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="br">
+	<head>
+		<meta charset = "UTF-8"/>						
+		<link rel="stylesheet" type="text/css" href="estilo.CSS" >		<!--Inclusão do CSS-->
+		<script src="efeitos.js"></script>				<!--Inclusão do JavaScript-->
+		
+		<title>Seja um franqueado!</title>
+		<link rel="icon" href="icones/icone_logo.png">
+	</head>
+	
+	<body>
+		<header id="topo">
+			<nav id="menu" class="escondida">
+				<ul>
+					<li><a href="index.html"><img class="logonav" src="icones/icone_logo_deitada.jpeg" /></a></li>
+					<li><a class ="botão2"href="index.html">Página inicial</a></li>
+					<li><a class="botão2" href="unidades.html">Unidades</a></li>
+					<li><a class="botão2" href="#midia">Mídia</a></li>
+					<li><a class="botão1" href="#formulario">ENVIE SEUS DADOS</a></li>
+				</ul>
+			</nav>
+			<nav id="menuHam" class="escondida" onmouseleave="transformarMenuHam()">
+				<ul>
+					<li><a href="index.html"><img class="logonav" src="icones/icone_logo_deitada.jpeg" /></a></li>
+					<li><a class ="botão3"href="index.html">Página inicial</a></li>
+					<li><a class="botão3" href="unidades.html">Unidades</a></li>
+					<li><a class="botão3" href="aulas.html">Aulas</a></li>
+					<li><a class="botão3" href="aulas.html#perguntasfrequentes">Dúvidas</a></li>
+					<li><a class="botão3" href="login.html">Login</a></li>
+					<li><a class="botão3" href="matricula.html">Cadastre-se</a></li>
+					<li><a class="botão3" href="franquia.html">Seja um franqueado</a></li>
+				</ul>
+			</nav>
+			<img src="icones/hamb-removebg-preview.png" onclick="transformarMenuHam()" class="escondida" id="botaoMenuHam">
+		</header>
+	<section id="home">
+		<div class="msggrande">
+			<h1 class="msg">VENHA CONQUISTAR O MUNDO <span class="azul">&nbsp;COM NOSSA FRANQUIA!</span></h1>
+		</div>
+	</section>
+	<section>
+
+			<img src="img/BANNERPGFRANQUIA.png" class="artefranqueado">
+			
+	
+	</section>
+	<section id="midia">
+		<h1 class="msg"><span class="azul">ATLAS ACADEMY</span>&nbspNA MÍDIA</h1>
+		<ul class="list">
+			<li><img src="icones/peso.png" id="iconeperguntasfrequentes">&nbsp;Mais de 1 milhão de clientes em todo Brasil</li><br>
+			<li><img src="icones/peso.png" id="iconeperguntasfrequentes">&nbsp;Mais de 500 academias em todo país</li><br>
+			<li><img src="icones/peso.png" id="iconeperguntasfrequentes">&nbsp;Eleita como melhor academia em 2018 pela globo</li><br>
+		</ul>
+	</section>
+	
+	<section id="formulario">
+		<div id="formulariofranquia">
+			'<form method="post" action="mailto:atlasacademy2023@gmail.com" enctype="text/plain" >
+				<fieldset>
+					<legend>Insira seus dados:</legend>
+					<table>
+						<tr>
+							<td>
+								<label for="nome">Nome:*</label>
+							</td>
+							<td>
+								<input id="nomeFranq" name="nome" placeholder="Insira seu nome completo" type="text" required />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="e-mail">E-mail:*</label>
+							</td>
+							<td>
+								<input id="emaiilFranq" name="email" placeholder="Ex. exemplo@email.com.br" type="email" required />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="telefone">Telefone:*</label>
+							</td>
+							<td>
+								<input id="telefoneFranq" name="telefone" placeholder= "(DDD) 00000-0000" type="tel" required />
+							</td>
+						<tr>
+							<td>
+								<label for="Renda">Renda Mensal:*</label>
+							</td>
+							<td>
+								<input id="rendaFranq" name="renda" placeholder="Ex. 20.000,00" type="Text" required />
+							</td>				
+						</tr>
+						<tr>
+							<td>
+								<label for="CidadedeResisdencia">Sua cidade:*</label>
+							</td>
+							<td>
+								<input id="CidadedeResisdenciaFranq" name="cidaderes" placeholder="Cidade onde reside" type="text" required />
+							</td>				
+						</tr>
+						<tr>
+							<td>
+								<label for="CidadeDeInteresse">Cidade de interesse:*</label>
+							</td>
+							<td>
+								<input id="CidadeDeInteresseFranq" name="cidadeint" placeholder="Cidade onde deseja abrir a franquia" type="text" required/>
+							</td>
+						</tr>
+						<tr >
+							<td colspan="2">
+								<label class="caixadetexto" for="caixadetexto">Por que deseja trabalhar conosco?*</label>
+						
+								<textarea class="caixadetexto"style="resize:none" id="textoFranq" name="txtinteresse" cols="50" rows="8"  required ></textarea>
+							</td>
+						</tr><tr></tr>
+						<tr>
+							<td colspan="2">
+								<input class="enviar" id="enviarFranq" type="submit">
+							</td>
+						</tr>
+					</table>
+				</fieldset>
+			</form>
+		</div>
+	</section>
+	
+	
+	<footer>
+		<p class="txtFooter">Siga-nos nas redes sociais </p>
+
+		<div class="redes">
+			<ul>
+				<li><a href="mailto:atlasacademy2023@gmail.com" target="_blank"><img src="icones/email.png"  /></a></li>
+				<li><a href="https://www.facebook.com/people/Atlas-Academy/100092415226796/?mibextid=ZbWKwL" target="_blank"><img src="icones/face.png"  /></a></li>
+				<li><a href="https://instagram.com/atlasacademia23?igshid=MzRlODBiNWFlZA==" target="_blank"><img src="icones/insta.png" /></a></li>
+				<li><a href="https://wa.me/5511988381595" target="_blank"><img src="icones/whats.png" /></a></li>
+			</ul>
+		</div>
+		<p class="botaotopo"><a href="#home">voltar ao topo</a></p>
+	</footer>
+	</body>
+</html>

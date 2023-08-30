@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="br">
+
+<head>
+	<meta charset="UTF-8">
+	<!--Padrão de caracteres brasileiro-->
+	<link rel="stylesheet" href="estilo.CSS">
+	<style>html{overflow: hidden; height: 100%;}footer{position: absolute;}	</style>
+	<!--CSS Externo-->
+	<script src="efeitos.js"></script>
+
+	<title>Faça seu login!</title>
+	<!--Título da página-->
+	<link rel="icon" href="icones/icone_logo.png" />
+	<!--Ícone da página-->
+
+</head>
+
+<body>
+	<nav>
+		<div id="menu" class="escondida">
+			<ul>
+				<li><a href="index.html"><img class="logonav" src="icones/icone_logo_deitada.jpeg" /></a></li>
+				<li><a class="botão3" href="index.html">Página inicial</a></li>
+				<li><a class="botão2" href="unidades.html">Unidades</a></li>
+				<li><a class="botão2" href="aulas.html">Aulas</a></li>
+				<li><a class="botão2" href="aulas.html#perguntasfrequentes">Dúvidas</a></li>
+				<li><a class="botão2" href="login.html">Login</a></li>
+				<li><a class="botão1" href="matricula.html">Começar agora</a></li>
+			</ul>
+		</div>
+		<div id="menuHam" class="escondida" onmouseleave="transformarMenuHam()">
+			<ul>	
+				<li><a href="index.html"><img class="logonav" src="icones/icone_logo_deitada.jpeg" ></a></li>
+				<li><a class="botão3" href="index.html">Página inicial</a></li>
+				<li><a class="botão3" href="unidades.html">Unidades</a></li>
+				<li><a class="botão3" href="aulas.html">Aulas</a></li>
+				<li><a class="botão3" href="aulas.html#perguntasfrequentes">Dúvidas</a></li>
+				<li><a class="botão3" href="login.html">Login</a></li>
+				<li><a class="botão3" href="matricula.html">Cadastre-se</a></li>
+				<li><a class="botão3" href="franquia.html">Seja um franqueado</a></li>
+			</ul>
+		</div>
+		<img src="icones/hamb-removebg-preview.png" onclick="transformarMenuHam()"  class="escondida" id="botaoMenuHam">
+	</nav>
+	<header id="home"></header>	
+    
+    <img  class="logoforms" src="icones/icone_logo_deitada.jpeg"><br><br><br><br>
+    <section id="formulario">
+        <form method="post" action="mailto:atlasacademy2023@gmail.com" enctype="text/plain" onsubmit="return erros()">
+            <fieldset>
+                <legend>Faça seu login</legend>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="usuario">Usuário:</label>
+                        </td>
+                        <td>
+                            <input id="usuario" type="text" required />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label  for="senha">Senha:</label>    
+                        </td>
+                        <td>
+                            <input id="senha" type="password" required />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td> 
+                        <td>
+                            <input class="enviar" type="submit"></input>
+                        </td>                
+                    </tr>
+                    <tr><td colspan="2" class="cadastroLogin" ><a href="matricula.html" class="cadastroLogin">Ainda não tem sua conta? cadastre-se aqui</a></td></tr>
+                </table>
+            </fieldset>
+        </form>
+    </section>
+    
+	<footer>
+		<p class="txtFooter">Siga-nos nas redes sociais </p>
+
+		<div class="redes">
+			<ul>
+				<li><a href="mailto:atlasacademy2023@gmail.com" target="_blank"><img src="icones/email.png"  /></a></li>
+				<li><a href="https://www.facebook.com/people/Atlas-Academy/100092415226796/?mibextid=ZbWKwL" target="_blank"><img src="icones/face.png"  /></a></li>
+				<li><a href="https://instagram.com/atlasacademia23?igshid=MzRlODBiNWFlZA==" target="_blank"><img src="icones/insta.png" /></a></li>
+				<li><a href="https://wa.me/5511988381595" target="_blank"><img src="icones/whats.png" /></a></li>
+			</ul>
+		</div>
+		<p><a href="franquia.html" class="txtFooter">CLIQUE E SEJA UM FRANQUEADO</a></p>
+	</footer>
+</body>
+</html>

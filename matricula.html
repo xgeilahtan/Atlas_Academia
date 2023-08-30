@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="br">
+
+    <head>
+        <meta charset="UTF-8">
+        <!--Padrão de caracteres brasileiro-->
+        <link rel="stylesheet" href="estilo.CSS">
+      
+        <!--CSS Externo-->
+        <script src="efeitos.js"></script>
+
+        <title>Atlas Academia</title>
+        <!--Título da página-->
+        <link rel="icon" href="icones/icone_logo.png" />
+        <!--Ícone da página-->
+
+    </head>
+
+    <body>
+        <nav>
+			<div id="menu" class="escondida">
+				<ul>
+					<li><a href="index.html"><img class="logonav" src="icones/icone_logo_deitada.jpeg" /></a></li>
+					<li><a class="botão3" href="index.html">Página inicial</a></li>
+					<li><a class="botão2" href="unidades.html">Unidades</a></li>
+					<li><a class="botão2" href="aulas.html">Aulas</a></li>
+					<li><a class="botão2" href="aulas.html#perguntasfrequentes">Dúvidas</a></li>
+					<li><a class="botão2" href="login.html">Login</a></li>
+					<li><a class="botão1" href="matricula.html">Começar agora</a></li>
+				</ul>
+			</div>
+			<div id="menuHam" class="escondida" onmouseleave="transformarMenuHam()">
+				<ul>	
+					<li><a href="index.html"><img class="logonav" src="icones/icone_logo_deitada.jpeg" ></a></li>
+					<li><a class="botão3" href="index.html">Página inicial</a></li>
+					<li><a class="botão3" href="unidades.html">Unidades</a></li>
+					<li><a class="botão3" href="aulas.html">Aulas</a></li>
+					<li><a class="botão3" href="aulas.html#perguntasfrequentes">Dúvidas</a></li>
+					<li><a class="botão3" href="login.html">Login</a></li>
+					<li><a class="botão3" href="matricula.html">Cadastre-se</a></li>
+					<li><a class="botão3" href="franquia.html">Seja um franqueado</a></li>
+				</ul>
+			</div>
+			<img src="icones/hamb-removebg-preview.png" onclick="transformarMenuHam()"  class="escondida" id="botaoMenuHam">
+		</nav>
+		<header id="home"></header>	
+
+        <section id="home"></section>
+        
+       <img  class="logoforms" src="icones/icone_logo_deitada.jpeg">   
+
+        <section id="formulario">
+            <form method="post" action="mailto:atlasacademy2023@gmail.com" enctype="text/plain" >
+                <fieldset>
+                    <legend>Matricule-se</legend>
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="nome">Nome</label>
+                        </td>
+                        <td>
+                            <input id="nomeFranq" name="nome" placeholder="Insira seu nome completo" type="text" required />
+                        </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="CPF">CPF*</label>
+                            </td>
+                            <td>
+                                <input type="text" placeholder="000.000.000-00" required />
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                <label for="e-mail">E-mail:*</label>
+                            </td>
+                            <td>
+                                <input id="emaiilFranq" name="email" placeholder="Ex. exemplo@email.com.br" type="email" required />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="telefone">Telefone:*</label>
+                            </td>
+                            <td>
+                                <input id="telefoneFranq" name="telefone" placeholder= "(DDD) 00000-0000" type="tel" required />
+                            </td>
+                        <tr>
+                        <tr>
+                            <td>
+                                <label for="estado">Estado</label>
+                            </td>
+                            <td>
+                                <select class="opcoes">
+                                    <option class="opcoes">ES</option>
+                                    <option class="opcoes">MG</option>
+                                    <option class="opcoes" selected>SP</option>
+                                    <option class="opcoes">RJ</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="endereço">Endereço*</label>
+                            </td>
+                            <td>
+                                <input type="text" placeholder="Ex. R. da sua casa, 13" required />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="genero">Sexo</label>
+                            </td>
+                            <td>
+                                <div class="botaoradioinline"><input type="radio" name="genero"></input>Feminino</div>
+                                <div class="botaoradioinline"><input type="radio" name="genero">Masculino</input></div>
+                                <div class="botaoradioinline"><input type="radio" name="genero">Não&nbsp;binário</input></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="unidades">Unidade</label>
+                            </td>
+                            <td>
+                                <select>
+                                    <option selected>--Escolha uma opção--</option>
+                                    <option>Guaipá</option>                           
+                                    <option>Freguesia do Ó</option>
+                                    <option>Paulista</option>
+                                    <option>Água Branca</option>
+                                </select>
+                            </td>
+                        </tr>       
+                        <tr>
+							<td colspan="2">
+								<input class="enviar" id="enviarFranq" type="submit">
+							</td>
+						</tr>
+                                    
+                    </table>
+                </fieldset>
+        </form>
+        </section>
+
+        <footer>
+            <p class="txtFooter">Siga-nos nas redes sociais </p>
+    
+            <div class="redes">
+                <ul>
+                    <li><a href="mailto:atlasacademy2023@gmail.com" target="_blank"><img src="icones/email.png"  /></a></li>
+                    <li><a href="https://www.facebook.com/people/Atlas-Academy/100092415226796/?mibextid=ZbWKwL" target="_blank"><img src="icones/face.png"  /></a></li>
+                    <li><a href="https://instagram.com/atlasacademia23?igshid=MzRlODBiNWFlZA==" target="_blank"><img src="icones/insta.png" /></a></li>
+                    <li><a href="https://wa.me/5511988381595" target="_blank"><img src="icones/whats.png" /></a></li>
+                </ul>
+            </div>
+            <p><a href="franquia.html" class="txtFooter">CLIQUE E SEJA UM FRANQUEADO</a></p>
+            <p class="botaotopo"><a href="#home">Voltar ao topo</a></p>
+        </footer>
+    </body>
+</html>

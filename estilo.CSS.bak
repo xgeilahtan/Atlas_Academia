@@ -1,0 +1,59 @@
+*{ /*Manda chuva do CSS*/
+    margin:0;
+    padding: 0;
+}
+
+/*---------------------Comandos gerais----------*/
+body{
+	background-color: #f5f2d0;
+}
+/*----------------index-----------------------*/
+
+
+
+
+/*-----------------Franquia-------------------------*/
+
+fieldset{
+	background-color: #fff;
+	width: 27%;
+	margin-left:37%;
+	border-radius: 5%;
+}
+legend{
+
+	background-color: #048ba8;
+	color: #fff;
+	border-radius: 5%;
+}
+table{
+	width:27%;
+	margin-left:5%;
+	
+	
+}
+input{
+	width: 100%;
+}
+.caixadetexto{
+	display:flex;
+	justify-content: center;
+	
+}
+
+.botao{
+	width:40%;
+	margin-left:60%;
+	background-color: #048ba8;
+	color: white;
+	border-radius: 20%;
+	border:#048ba8;
+	cursor: hover;
+}
+
+
+
+	
+
+
+

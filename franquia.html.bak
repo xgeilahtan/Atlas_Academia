@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="br">
+	<head>
+		<meta charset = "UTF-8"/>						
+		<link rel="stylesheet" href="estilo.CSS">		<!--Inclusão do CSS-->
+		<script src="efeitos.js"></script>				<!--Inclusão do JavaScript-->
+		
+		<title>Seja um franqueado!</title>
+		<link rel="icon" href="icones/icone_logo.png">
+	</head>
+	
+	<body>
+	
+	<form method="post" action="mailto:victorlima.oliveira70@gmail.com" enctype="text/plain">
+		<fieldset>
+			<legend>Insira seus dados:</legend>
+			<table>
+				<tr>
+					<td>
+						<label for="nome">Nome:*</label>
+					</td>
+					<td>
+						<input id="nomeFranq" name="nome" placeholder="Insira seu nome completo" type="text" required />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="e-mail">E-mail:*</label>
+					</td>
+					<td>
+						<input id="emaiilFranq" name="email" placeholder="Ex. exemplo@email.com.br" type="email" required />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="telefone">Telefone:*</label>
+					</td>
+					<td>
+						<input id="telefoneFranq" name="telefone" placeholder= "(DDD) 00000-0000" type="tel" required />
+					</td>
+				<tr>
+					<td>
+						<label for="Renda">Renda Mensal:*</label>
+					</td>
+					<td>
+						<input id="rendaFranq" name="renda" placeholder="Ex. 20.000,00" type="Text" required />
+					</td>				
+				</tr>
+				<tr>
+					<td>
+						<label for="CidadedeResisdencia">Sua cidade:*</label>
+					</td>
+					<td>
+						<input id="CidadedeResisdenciaFranq" name="cidaderes" placeholder="Cidade onde reside" type="text" required />
+					</td>				
+				</tr>
+				<tr>
+					<td>
+						<label for="CidadeDeInteresse">Cidade de interesse:*</label>
+					</td>
+					<td>
+						<input id="CidadeDeInteresseFranq" name="cidadeint" placeholder="Cidade onde deseja abrir a franquia" type="text" required/>
+					</td>
+				</tr>
+				<tr >
+					<td colspan="2">
+						<label class="caixadetexto" for="caixadetexto">Por que deseja trabalhar conosco?*</label>
+				
+						<textarea class="caixadetexto"style="resize:none" id="textoFranq" name="txtinteresse" cols="50" rows="8"  required ></textarea>
+					</td>
+				</tr><tr></tr>
+				<tr>
+					<td></td>
+					<td>
+						<input class="botao" id="enviarFranq" type="submit">
+					</td>
+					
+				</tr>
+			</table>
+		</fieldset>
+	</form>
+	
+	
+	</body>
+
+
+</html>

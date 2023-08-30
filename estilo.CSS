@@ -1,0 +1,801 @@
+/*---------------------Comandos gerais----------*/
+	*{ 
+		margin:0;
+		padding: 0;
+	}
+	.escondida{visibility: hidden; height: 0px; scroll-behavior: smooth;}
+	.exibida{visibility: visible; height: auto;}
+
+	@font-face {font-family: 'DALEK-PINPOINT';src: url(Fontes/DalekPinpointBold.ttf) format(truetype);}
+	@font-face {font-family: 'BEBAS-NEUE';src: url(Fontes/BebasNeue-Regular.ttf) format(truetype);}
+	@font-face{font-family: MONTSERRAT;src:url(Fontes/Montserrat.ttf) format(truetype);}
+	
+	html{scroll-behavior: smooth;}
+	:target {					 /* configuramos como será a chegada do link */
+		scroll-margin-top: 75px; /* espaçamento entre o inicio do browser e o local de chegada do link */ 
+	}
+		
+	body{background-color: #fff2f1;}
+	
+	footer
+	{
+		width: 100%;
+		margin-top: 25px;
+		left:0px;
+		right:0px;
+		bottom:0px;
+		background-color: #082E45;
+		text-align:center;
+		padding-bottom: 6vh;
+	}
+	a.txtFooter:hover{
+		color: #daa520;
+		text-shadow: 0 0 0.1em #fff, 0 0 0.2em #fff,0 0 0.3em #fff, 0 0 0.3em #daa520, 0 0 0.4em #daa520;
+	}
+	.txtFooter{
+		color: #fff;
+		font-size: 1.5vw;
+		text-decoration: none;
+		font-family: 'BEBAS-NEUE', Condensed, Arial, Helvetica, sans-serif ;
+
+	}
+	.redes{
+		margin-bottom: 1.1vh;
+		margin-top: 2vh;
+		width: 100%;
+	}
+	.redes ul
+	{
+		display: inline-flex;
+		justify-content: space-evenly;
+		list-style: inside none;
+	}
+	.redes img{
+		width: 60%;
+		height: 33px;
+	}
+	.botaotopo, .botaotopo a{
+		text-align: end;
+		color: #f5f5f5;
+		text-decoration: none;
+		margin-right: 25px;
+		padding-top: 2vh;
+		font-size: 1.2vw;
+	}
+
+	.botaotopo:visited{color:#f5f5f5;}
+	.titulos{
+		display: flex;
+		justify-content: center;
+		font-size: 2vw;
+		text-transform: uppercase;
+	}
+	.titulo
+	{
+		text-align: center;
+		margin-top: -7vw;
+		margin-bottom: 2vw;
+		color: #082E45;
+	}
+	.titulo div
+	{
+		color: #daa520;
+		font-size: 4vw;
+	}
+	.titulosAzul{
+		color: #048ba8;
+	}
+
+/*----------------index-----------------------*/
+	.logonav{
+		margin-top: 7px;
+		width: 120%;
+		height: 6.8vh;
+	}		
+   #menu
+   	{
+		background-color: #082E45;
+		width: 100%;
+		position: fixed;
+		top:0%;
+		left: 0;
+		right:0;
+		height: 8vh;
+		z-index: 2;
+	}
+	#menu ul{
+		font-family:'DALEK-PINPOINT', arial;
+		display: inline-flex;
+		list-style: inside none;
+		color: #fff;
+		text-transform: uppercase;
+		font-size: 1.3vw;
+		justify-content: space-around;
+		align-items: center;
+		vertical-align: center;
+		font-weight: bold;
+	}
+	
+	nav a:link{	text-decoration: none;	}
+	nav a:hover{color: #daa520!important ; text-shadow: 0 0 0.1em #fff, 0 0 0.2em #fff,0 0 0.3em #fff, 0 0 0.3em #daa520, 0 0 0.4em #daa520;}
+	#menuHam ul{
+		font-family: 'BEBAS_NEUE', arial;
+		position: fixed;
+		background-color: #082E45;
+		list-style: inside none;
+		top: 0px;
+		z-index: 2;
+		right: 0px;
+		text-transform: uppercase;
+		text-align: center;
+	}
+	#botaoMenuHam
+	{
+		background-color: #F5F5F5;
+		position: fixed;
+		z-index: 3;
+		border-radius: 50%;
+		width: 7%;
+		height: 7%;
+		right: 25px;
+		bottom: 30px;
+		border: none;
+		font-weight: bold;
+		font-size: 3.5vw;
+		cursor: pointer;
+		box-shadow: 2px 4px 10px #000;
+	}
+	.botão1
+	{   
+		color: #daa520 !important;
+		background-color: #F5F5F5;
+		border-radius: 134px;
+		padding:8px 16px;
+	}
+	
+		a.botão1:hover{ 
+		background-color: #048ba8;
+		color: #fff !important;
+		
+	}
+	.botão2{
+		color: #fff;
+	}
+	.botão3{
+		color: #daa520;		
+	}
+	.botão3:visited{
+		color:#F5F5F5
+	}
+
+	#carrossel
+	{
+		height: auto;
+		width:100%;
+	}
+	.imagemCarrossel{
+		width: 100%;
+		height: 100%;
+		box-shadow:2px 4px 2px rgb(100,100,100);
+	}
+	.ante, .prox{
+		position:absolute;
+		cursor:pointer;
+		width: 10%;
+	}
+	.prox{margin-left: 90%;}
+	.titulo
+	{
+		text-align: center;
+		font-family: Arial, Helvetica, sans-serif;
+		margin-top: -7vw;
+		margin-bottom: 2vw;
+	}
+
+	#templo
+	{	
+		width: 98%;
+		height: 45vh;
+		margin-left: 1%;
+		border-radius: 2vh;
+	}
+	#desafios
+	{
+		margin-top: 3vh;
+		margin-bottom: 8vh;
+		display: flex;
+		flex-flow: row wrap;
+		width: 100%;
+		justify-content: center;
+		gap: 2vw;
+	}
+
+	.banner
+	{	
+		display: inline-grid;
+		background-color: #FCF8ED;
+		height: 40vh;
+		width: 20%;
+		border-radius: 1vw;
+		box-shadow: 0 2px 4px #daa520;
+		cursor:pointer
+	}
+	.banner:hover
+	{	
+		border: 1.6px solid #daa520;
+		transition: border-color 0.02s ease;
+	}
+	.linkBanner{
+		text-decoration: none;
+		text-align: center;
+	}
+	.imagemBanner
+	{
+		height: 25vh;
+		width: 100%;
+		border-radius: 1vw 1vw 0vw 0vw;
+	}
+	.txtBanner{
+		padding-top: 5vh;
+		padding-bottom: 5vh;
+		font-family: MONTSERRAT, arial;
+		font-size: 1.2vw;
+		padding-left: 1vw;
+		text-align: center;
+		width: 90%;		
+		color: #003559;  
+	}
+	.txtBannerLink{
+		font-family: MONTSERRAT;
+		font-size: 1.2vw;
+		padding-left: 1vw;
+		text-align: center;
+		width: 90%;		
+		color: #003559; 
+		padding-top: 2vh;
+		padding-bottom: 2vh; 
+	}
+	.tituloBanner h3
+	{
+		text-align: center;
+		vertical-align: middle;
+		font-family: 'BEBAS-NEUE', arial;
+		background-color: #082E45 !important;
+		height: 4vh;
+		color: #FCF8ED;
+		font-size: 1.2vw;
+	}
+	.saiba
+	{	
+		text-align: center;
+		font-weight: bold;
+		margin-top: 2vw;
+		font-family: Gotham,sans-serif;
+	}
+	.saiba a {color: inherit;	}
+	.azul1{	color:#082E45;	}
+	.titulo
+	{
+		text-align: center;
+		margin-top: -7vw;
+		margin-bottom: 2vw;
+		color: #082E45;
+	}
+	.titulo div
+	{
+		color: #daa520;
+		font-size: 4vw;
+
+	}
+	.txtSobreNos{
+		padding: 20px 20px;
+		font-family: MONTSERRAT;
+		color:#082E45;
+		font-size: 1.2vw;
+		background-color: #daa520;
+		border-radius: 0.8vw;
+		margin-top: 2vw;
+		width: 95%;
+		margin-left: 7%;
+		box-shadow:2px 4px 2px rgb(37, 26, 26);
+		
+	}
+	#atlas{
+		width: 90%;
+		margin-bottom: 10vh;
+
+	}
+
+/*-----------------franqueado-------------------------*/
+	.artefranqueado {
+		width: 100%;
+		margin-top: 1.5vh;
+	}
+	.list {
+		margin-left: 30%;
+		margin-top: 10px;
+		vertical-align: middle;		
+		font-size: 3vh;
+		font-family: 'BEBAS-NEUE';
+		list-style: none;
+		align-items: center	;
+	}
+	.list ul li { 		align-items: center	;
+	}
+	#midia{margin-top: 55px;}
+	#formulario{ margin-left: 32%;}
+	fieldset{
+		background-color: #fff;
+		width: 35vw;
+		border-radius: 5%;
+		border: none;
+		box-shadow:8px 8px 4px rgb(100,100,100);
+	}
+	legend{
+		font-family: 'BEBAS-NEUE';
+		border-radius: 134px;
+		padding:4px 8px;
+		background-color: #048ba8;
+		color: #fff;
+	}
+	table{
+		width:90%;
+		margin-left:5%;	
+	}
+	input{width: 100%;}
+	label {font-family: 'BEBAS-NEUE';}
+	.opcoes{font-family: 'BEBAS-NEUE';}
+	.caixadetexto{
+		display:flex;
+		justify-content: center;
+		width: 100%;		
+	}
+	.enviar{
+		width: 25%;
+		margin-left:75%;
+		margin-top: 10px;
+		background-color: #048ba8;
+		color: white;
+		border-radius: 134px;
+		padding:4px 8px;
+		border:#048ba8;
+		cursor: pointer;
+		font-family: 'BEBAS-NEUE';
+		font-size: 1vw;
+	}
+	.enviar:hover{
+		background-color: #daa520;
+		color: #F5F5F5;
+	}
+	/*--------------aulas----------------------*/
+	#linkesterno{font-size: 0.1vw;}
+	.perguntasfrequentes{
+		display: inline-block;
+		justify-content: center;
+		width: 50%;
+		padding: 1vw;
+		background-color: #082E45;
+		color:#f5f5f5;
+		border-radius: 25px;
+		font-family: 'BEBAS-NEUE';
+	}
+	.perguntas{	cursor: pointer; display: flex; align-items: center; text-indent: 1vw;}
+	#blocoperguntasfrequentes{width: 100%;display: flex; justify-content: center; }
+	#iconeperguntasfrequentes{ width: 1.7vw;}
+	article{text-align:center; padding: 2px;}
+
+	.descricaoaulas
+	{	
+		font-size: 6vw;
+		color: #f5f5f5;
+		width: 100%;
+		font-family:'BEBAS-NEUE', arial;
+		font-weight: bold;
+		text-align: center;
+		margin-top: 1%;
+	}
+
+	.icones
+	{
+		width: 100%;
+		background-color: #082E45;
+		display: block;
+	}
+	.icone1, .icone2{width: 49%;}
+	.sobre
+	{
+		text-align: justify;
+		margin-bottom: 3vh;
+		color: #fff;
+		font-family: MONTSERRAT ;
+		font-size: 0.8vw;
+		font-weight: lighter;
+		padding: 1vw;
+	}
+
+	/*----------------- Unidades ------------*/
+	.msg
+	{	
+		color: #daa520;
+		font-family:'BEBAS-NEUE', arial;
+	}
+	.azul{color:#003559 !important;}
+
+	.unidades 
+	{	
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		width: 100%;
+  	}	
+  
+  	.item
+  	{
+		display: inline-grid;
+		height: auto;
+		width: 25%;
+		margin: 0% 4vw;
+		padding: 0.2%;
+		border-radius: 0.3vw;
+		margin-bottom: 1%;
+		margin-top: 3%;
+		background-color: #082E45;
+		box-shadow:2px 4px 10px #000000;
+	}
+	.imagemItem{
+		border-radius: 0.3vw 0.3vw 0vw 0vw;
+		height: 35vh;
+		width: 100%;
+		margin-top: 2vh;
+		margin-top: 0.1vh;
+		box-shadow: 1px 1px 1px #003559;
+	}
+	.endereco
+	{
+		color: #ffff;
+		font-size: 0.9vw;
+		cursor:pointer;		
+		margin-left: 0.5vw;
+	}
+	.endereco:hover { text-decoration: underline;}
+	iframe{
+		width: 80%;
+		margin-left: 10%;
+		margin-top: 2vh;
+		margin-bottom:2vh;
+		height: 200vh;
+	}
+	.preco
+	{
+		background-color: #FAF1DC;
+		color: #daa520;
+		font-weight: bolder;
+		width: 40%;
+		height: 5%;
+		padding-top: 1.5%;
+		padding-bottom: 0.5%;
+		border-radius:0.5VW;
+		margin-top: 1vw;
+		font-size: 1.1vw;
+	}
+	.valores
+	{	
+		font-size: 1.5vw;
+		font-family: 'BEBAS-NEUE', arial;
+		color: #fff;
+		margin-left: 1vw;
+	}
+	.planos
+	{	
+		color: #fff;
+		display: flex;
+		font-family: 'BEBAS-NEUE';
+		font-size: 1.5vw;
+		margin-left: 10%;
+	}
+	.planoDois{
+		color: #fff;
+		margin-bottom: 2vh;
+		margin-left: 40%;
+	}
+	.tachado
+	{
+		font-size: 1vw;
+		text-decoration: line-through;
+		color: #048ba8;
+	}
+	.btn
+	{   
+		font-family: 'BEBAS-NEUE', arial;;
+		color: #daa520 !important;
+		background-color: #F5F5F5;
+		border-radius: 134px;
+		padding:8px 16px;
+		cursor:pointer;
+		text-align: center;
+		margin-bottom: 0.5vh;
+		text-decoration: none;
+	}	
+	.btn:hover
+	{ 
+		text-decoration: none;
+		background-color: #048ba8;
+		color: #fff !important;
+	}
+	.btn1
+	{   
+		text-align: center;
+		position: relative;
+		z-index: 1;
+		top: 24vh;
+		margin-left: 43vw;
+		font-size: 2vw;
+		font-family: 'BEBAS-NEUE', arial;
+		color: #082E45;
+		background-color: #FCF8ED;
+		border-radius: 134px;
+		padding: 18px 16px;
+		text-decoration: none;
+	}
+	.btn1:hover
+	{
+		border: 3.5px solid #daa520;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		cursor:pointer;
+		color:#daa520;
+	}
+	.btn1 a 
+	{
+		text-decoration: none;
+		color: #daa520;
+	}
+	/*--------------login-------------------*/
+
+	h1{font-family:'DALEK-PINPOINT', arial;
+		text-align: center;}
+	.logoforms{
+	width: 50%;
+	margin-left: 25%;
+	margin-top: 2vh;
+	margin-bottom: 6	vh;
+	border-radius: 134px;
+	}
+	
+	.cadastroLogin, a.cadastroLogin:visited{
+		text-align: center;	
+		font-family: 'BEBAS-NEUE';
+		color: #daa520;
+		text-decoration: none;
+	}
+	a.cadastroLogin:hover {
+	color: rgba(8,46,69,100%);
+	border-radius: 134px;
+	}
+	/*------matricula--------*/
+
+	.botaoradioinline{display: inline-flex; font-family: 'BEBAS-NEUE'; }
+	/*-----------Responsividade-------------*/
+
+	@media only screen and (max-width: 600px) { /*-------Responsividade celular------------*/
+		#menuHam, #menuHam ul{ font-size: 3.8vw;}
+		#botaoMenuHam{visibility: visible;}
+
+		.logonav{
+			width: 100%;
+			height: 15vh;
+		}
+		
+		.redes img{
+			width: 55%;
+			height: 5vh;
+		}
+		nav ul{
+			width: 100%;
+			height: 100%;
+			font-size: 1.8vw;
+		}
+		.txtFooter{	font-size: 3vw;}
+		.botaotopo a{font-size: 3vw; text-align:start;}
+		/*---------------Responsividade index celular----------------*/
+		.ante, .prox {	top:4vh;}
+		.txtBanner{font-size: 3.5vw; padding-bottom: 2vh;}
+		.banner{
+			width: 70%;
+			height: 60vh;
+			margin-left: 1%;
+		}
+		.btn1{top: 11vh; margin-left: 39vw; }
+		.tituloBanner h3{	font-size: 4vw;	}
+		.txtBannerLink{	text-align:center; font-size: 3vw;	width:100%}
+		.txtSobreNos{font-size: 2.5vw;	margin-left: 4%;}
+		#templo img{height: 20vh;}
+		/*-----responsividade unidades celular---------*/
+
+		.msg, .azul1{ font-size: 4.5vw;}
+		.item {
+			flex-direction: column;
+			width: 70%;
+			margin: 2vh 10%;
+		}
+		.endereco{font-size: 2.5vw;}
+		.valores{font-size: 3vw;}
+		.planos{font-size: 4vw;}
+		.planoDois{font-size: 4vw;}
+		.tachado{font-size: 4vw;}
+
+		/*-----Responsividade aulas celular-----------*/
+		.perguntasfrequentes{padding: 2vw; width: 90%;}
+		#iconeperguntasfrequentes{ width: 3.5vw;}
+		fieldset{width: 90%; margin-left: 5%;}
+		table td {display: flex; flex-direction: column;}
+		.enviar{font-size: 2vw;}
+		.sobre {font-size: 3vw;}
+		.icone1, .icone2{width: 35%;}
+		.icone2{margin-left:25%}
+
+		/*------Responsividade login celular----------*/
+		.logoforms{
+			width: 90%; 
+			margin-left: 5%;
+			height: 20vh;
+			margin-bottom: 2vh;
+			margin-top: 0.5vh;
+		}
+		#formulario{margin-left:2%}
+		/*-----Responsividade matricula celular--------*/
+		.botaoradioinline {justify-content: left; align-items: center;}
+		.botaoradioinline input {width: 10%; height: 1.8vh;}
+		/*-----responsividade franqueado celular-------*/
+		#midia{	width: 100%;}
+		.list{	margin-left: 10vw;}
+	}
+	@media only screen and (min-width: 600px){ /*---------Responsividade tablet---------*/
+		#menuHam, #menuHam ul{ font-size: 2.8vw;}
+		#botaoMenuHam{visibility: visible;}
+		#menuHam ul{
+			width: 35%;
+			font-size: 2vw;
+		}
+		.logonav{
+			width: 80%;
+			height: 15vh;
+		}
+		.redes img{
+			width: 60%;
+			height: 5vh;
+		}
+		nav ul{
+			width: 25%;
+			height: 100%;
+		}
+		#home{	margin-top: 0px;	}
+		/*--------- Responsividade index tablet---------------*/
+		.ante, .prox {	top:4vh;}
+		.txtBanner{font-size: 2.5vw; padding-bottom: 2vh;}
+		.banner{
+			width: 42%;
+			height: 60vh;
+			margin-left: 1%;
+		}
+		.tituloBanner h3{	font-size: 3vw;	}
+		.txtBannerLink{	text-align:center; font-size: 2vw;	width:100%}	
+		.txtSobreNos{font-size: 2vw;}	
+		/*-----responsividade unidades tablet---------*/
+		.msg, .azul1{ font-size: 4.5vw;}
+		.item {
+			display: inline-grid;
+			width: 40%;
+			margin: 2vh 2%;
+		}
+		.endereco{font-size:1.5vw}
+		.valores{font-size: 2.8vw;}
+		.planos{font-size: 2.5vw;}
+		.planoDois{font-size: 2.5vw;}
+		.tachado{font-size: 2vw;}
+		.descricaoaulas{font-size:3.5vw}
+	/*-----Responsividade aulas tablet-----------*/
+		.perguntasfrequentes{padding: 2vw; width: 90%;}
+		#iconeperguntasfrequentes{ width: 3.5vw;}
+		fieldset{width: 85%; margin-left: 10%;}
+		table td {display: flex; flex-direction: column;}
+		.descricao{font-size: 2.5vw !important;}
+		.enviar{font-size: 2vw;}
+		.sobre {font-size: 2vw;}
+		.icone1, .icone2{width: 35%;}
+		.icone2{margin-left:20%}
+
+		/*------Responsividade login tablet----------*/
+		.logoforms{
+			width: 85%; 
+			margin-left: 10%;
+			height: 20vh;
+			margin-bottom: 2vh;
+			margin-top: 2vh;
+		}
+		#formulario{margin-left:2%}
+		/*-----Responsividade matricula tablet--------*/
+		.botaoradioinline {justify-content: left; align-items: center;}
+		.botaoradioinline input {width: 10%; height: 1.8vh;}
+
+		/*-----franqueado--------*/
+		.msggrande{
+			color: #daa520 !important;
+		font-family:'DALEK-PINPOINT', arial;
+		font-size: 3vw !important;}
+	}
+
+	@media only screen and (min-width: 992px){/*-------------responsividade desktop------------*/
+		#menu{visibility: visible;}
+		#botaoMenuHam{visibility: hidden;}
+		.logonav{
+			margin-top: 7px;
+			width: 120%;
+			height: 6.8vh;
+		}		
+		.redes img{
+			width: 55%;
+			height: 5vh;
+		}
+		nav ul{
+			width: 100%;
+			height: 100%;
+			font-size: 1.4vw;
+		}
+		#home{margin-top: 8.1vh;}
+		/*------Responsividade index desktop-----*/
+		.ante, .prox {	top: 15vh;}
+		.txtBanner{font-size: 1.2vw; padding-bottom: 2vh;}
+		.banner{
+			width: 20%;
+			height: 55vh;
+			margin-left: 1%;
+		}
+		.tituloBanner h3{	font-size: 1.5vw;	}
+		.txtBannerLink{	text-align:center; font-size: 1vw;	width:100%}	
+		.txtSobreNos{font-size: 1.2vw;	margin-left: 7%;}
+
+		/*----responsividade unidades desktop----*/
+		.msg
+		{
+			font-size: 3.2vw;
+			margin-top: 1.2vw;
+		}
+		.descricaoaulas {font-size: 1vw;}
+		.endereco{font-size:1vw}
+		.valores{font-size: 1.5vw;}
+		.planos{font-size: 1.1vw;}
+		.planoDois{font-size: 1.1vw;}
+		.tachado{font-size: 1vw;}
+		
+		/*-----Responsividade aulas desktop-------*/
+		.descricaoaulas{font-size: 1.8vw;}
+		.perguntasfrequentes{padding: 2vw; width: 55%;}
+		.botaoradioinline {justify-content: left; align-items: center;}
+		#iconeperguntasfrequentes{ width: 1.8vw;}
+		table td {display: flex;}
+		.descricao{font-size: 5.5vw !important;}
+		.enviar{font-size: 1vw;}
+		.btn{font-size: 1.4vw;}
+		.sobre {font-size:1vw}
+		.item
+		{
+			display: flex;
+			display: inline-grid;
+			height: auto;
+			width: 20vw;
+			border-radius: 0.3vw 0.3vw 1vw 1vw;
+			margin-bottom: 1%;
+			margin-top: 3%;
+			background-color: #082E45;
+			box-shadow:2px 4px 10px #000000;
+		}
+		.logoforms{
+			width: 55%;
+			height: 22vh;
+			margin-top: 2vh;
+			margin-left: 22%;	
+		}
+		fieldset{width: 32%; margin-left: 32%;}
+		table td {display: flex; flex-direction: column;}
+	}
+	
